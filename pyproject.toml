@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=58.0.4", "setuptools_scm>=6.3"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "editor"
+version = "0.1.0"
+description = "A video editing script"
+keywords = ["video", "editing"]
+
+
+dependencies = [
+  "moviepy",
+  "typer"
+]
+
+[project.scripts]
+editor = "editor:main"
